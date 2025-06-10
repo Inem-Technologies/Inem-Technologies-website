@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inem Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-blue-600">Inem Technologies</h1>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                        Home
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                        Services
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                        Products
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                        Contact Us
+                    </a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button"
+                        class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu (hidden by default) -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 border-t border-gray-200">
+                    <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Products</a>
+                    <a href="#" class="block px-3 py-2 text-gray-70 hover:text-blue-600 font-medium">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bg-blue-600 text-white font-sans">
+        <div class="min-h-screen flex flex-col md:flex-row items-center justify-center p-6 md:p-12">
+            <!-- Left Content -->
+            <div class="md:w-1/2 w-full md:pr-10 ml-10 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    Innovative <br />
+                    Software Solutions <br />
+                    for Your Business <br />
+                    Growth
+                </h1>
+                <p class="text-lg md:text-xl mb-8 text-blue-100">
+                    At Inem Technologies, our team of experts <br class="hidden md:block" />specializes in software
+                    development and is <br class="hidden md:block" />passionate about helping businesses like yours <br
+                        class="hidden md:block" />grow with custom solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <button
+                        class="bg-white text-blue-600 px-6 py-3 rounded-md font-semibold shadow hover:bg-blue-100 transition">
+                        Get Started
+                    </button>
+                    <button
+                        class="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="md:w-1/2 w-full">
+                <img src="./banner.jpg" alt="Team working at computers"
+                    class="rounded-xl shadow-lg w-full object-cover" />
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white text-center py-16">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p class="text-lg md:text-xl text-gray-600">Comprehensive software solutions tailored to your needs</p>
+        </div>
+    </div>
+
+    <div class="bg-white text-gray-800">
+        <section class="py-12 px-4 sm:px-6 lg:px-20">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-sm p-6">
+                    <div class="bg-blue-600 text-white w-14 h-14 flex items-center justify-center rounded-md mb-4">
+                        <img src="./code.png" alt="software development icon" class="w-6 h-6" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Software<br />Development</h3>
+                    <p class="text-gray-600 text-base">
+                        Custom software solutions built with cutting-edge technologies to meet your specific business
+                        requirements.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-sm p-6">
+                    <div class="bg-blue-600 text-white w-14 h-14 flex items-center justify-center rounded-md mb-4">
+                        <img src="./setting.png" alt="software development icon" class="w-6 h-6" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Software Services</h3>
+                    <p class="text-gray-600 text-base">
+                        Comprehensive software maintenance, support, and optimization services to keep your systems
+                        running smoothly.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-50 rounded-xl shadow-sm p-6">
+                    <div class="bg-blue-600 text-white w-14 h-14 flex items-center justify-center rounded-md mb-4">
+                        <img src="./brain.png" alt="software development icon" class="w-6 h-6" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI/ML Technologies</h3>
+                    <p class="text-gray-600 text-base">
+                        Advanced artificial intelligence and machine learning solutions to automate and enhance your
+                        business processes.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="bg-gray-50">
+        <section class="text-center py-20 px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+            <p class="text-lg sm:text-xl text-gray-600">Innovative solutions that transform industries</p>
+        </section>
+    </div>
+    <div class="bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 mb-10">
+            <div class="bg-white md:flex rounded-3xl overflow-hidden shadow-xl">
+                <!-- Left: Text Content -->
+                <div class="w-full md:w-1/2 p-10">
+                    <span class="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
+                        Early Stage Startup
+                    </span>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        Vidplain AI
+                    </h2>
+
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        Vidplain AI is dedicated to enhancing education through technology. Our innovative tool answers
+                        student queries with interactive, AI-generated video responses.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        By combining advanced natural language processing (NLP) with video generation, we make complex
+                        topics more understandable and engaging for students.
+                    </p>
+
+                    <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Right: Image -->
+                <div
+                    class="w-full md:w-1/2 bg-gradient-to-br  from-blue-400 to-purple-600 flex items-center justify-center">
+                    <img src="./viplanai.png" alt="AI Video Interface" class="max-w-full h-auto rounded-xl shadow-lg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <section class="w-full px-4 py-16 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+            <p class="text-lg sm:text-xl text-gray-600">Get in touch with our team</p>
+        </section>
+    </div>
+
+    <div class=" bg-white">
+        <div class="flex justify-center py-1 px-4 sm:px-6 lg:px-8">
+            <div class="w-full max-w-lg bg-gray-100 rounded-xl shadow-sm p-8 space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-900">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your Name"
+                        class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
+                    <input id="email" name="email" type="email" placeholder="your@email.com"
+                        class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                </div>
+                <div>
+                    <label for="comments" class="block text-sm font-medium text-gray-900">Comments /
+                        Requirements</label>
+                    <textarea id="comments" name="comments" rows="5"
+                        placeholder="Tell us about your project or requirements..."
+                        class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white py-3 rounded-md font-medium hover:bg-blue-700 transition duration-200">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-900 text-white mt-10">
+
+        <!-- Footer -->
+        <footer class="px-6 py-10 bg-gray-900">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-10 text-sm">
+
+                <!-- Company Info -->
+                <div class="flex-1">
+                    <h2 class="text-xl font-bold mb-2">Inem Technologies</h2>
+                    <p class="text-gray-400">Innovative software solutions for<br />business growth</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flex-1">
+                    <h3 class="text-white font-semibold mb-2">Quick Links</h3>
+                    <ul class="space-y-1 text-gray-300">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">Services</a></li>
+                        <li><a href="#" class="hover:text-white">Products</a></li>
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="flex-1">
+                    <h3 class="text-white font-semibold mb-2">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mr-2 mt-1 text-blue-500"></i>
+                            +91 9047265051
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mr-2 mt-1 text-blue-500"></i>
+                            admin@inemtechnologies.com
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1 text-blue-500"></i>
+                            29, M.R. Kandigai, Winterpet, Arakkonam<br />
+                            TN 631005
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="flex-1">
+                    <h3 class="text-white font-semibold mb-2">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/inem-technologies-pvt-ltd/">
+                            <img src="./linkedin.png" alt="LinkedIn" class="w-8 h-8" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-400 text-sm">
+                © 2025 Inem Technologies Pvt Ltd. All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Simple mobile menu toggle
+        const mobileMenuButton = document.querySelector('button[type="button"]');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>
