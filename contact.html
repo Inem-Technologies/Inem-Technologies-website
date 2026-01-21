@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Inem Technologies for your software development and AI needs. We are here to help you transform your business.">
+    <meta name="keywords"
+        content="Contact Inem Technologies, Business Inquiry, Tech Support, Software Quote, IT Consultation">
+    <title>Contact Us - Inem Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body class="bg-gray-50 font-sans antialiased text-gray-900">
+
+    <!-- Navigation -->
+    <header
+        class="bg-white/95 backdrop-blur-md fixed w-full z-50 shadow-sm border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <img src="./code.png" alt="Inem Logo" class="h-8 w-8 text-blue-600 hidden">
+                    <a href="home.html"
+                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500 hover:opacity-80 transition">
+                        Inem Technologies
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="home.html"
+                        class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200">Home</a>
+                    <a href="about.html"
+                        class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200">About
+                        Us</a>
+                    <a href="services.html"
+                        class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200">Services</a>
+                    <a href="contact.html"
+                        class="px-6 py-2.5 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">Contact
+                        Us</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-gray-700 hover:text-blue-600 focus:outline-none p-2 rounded-md hover:bg-gray-100 transition">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-white border-t border-gray-100 absolute left-0 right-0 shadow-xl"
+                id="mobile-menu">
+                <div class="px-4 pt-4 pb-6 space-y-2">
+                    <a href="home.html"
+                        class="block px-4 py-3 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-50 rounded-lg transition">Home</a>
+                    <a href="about.html"
+                        class="block px-4 py-3 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-50 rounded-lg transition">About
+                        Us</a>
+                    <a href="services.html"
+                        class="block px-4 py-3 text-gray-700 hover:text-blue-600 font-medium hover:bg-gray-50 rounded-lg transition">Services</a>
+                    <a href="contact.html"
+                        class="block px-4 py-3 text-center bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition mt-4 shadow-md">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="bg-blue-900 pt-32 pb-20 text-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="./hero-bg.png" alt="Background" class="w-full h-full object-cover grayscale">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in">Contact Us</h1>
+            <p class="text-xl text-blue-200 max-w-2xl mx-auto animate-fade-in animate-delay-100">Have a project in mind?
+                We'd love to hear from you.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100 animate-fade-in animate-delay-200"
+                    id="formContainer">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="successMessage"
+                        class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-6 relative"
+                        role="alert">
+                        <strong class="font-bold">Thank you!</strong>
+                        <span class="block sm:inline">Our team will contact you shortly.</span>
+                    </div>
+
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                                Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                                placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your
+                                Requirements</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                                placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition transform hover:-translate-y-1 shadow-md">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="flex flex-col justify-center animate-fade-in animate-delay-300">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+                        Ready to start your next project with us? Give us a call or send us an email and we will get
+                        back to you as soon as possible.
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div
+                                class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 flex-shrink-0">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold text-gray-900">Phone</h3>
+                                <p class="text-gray-600 mt-1">+91 9047265051</p>
+                                <p class="text-sm text-gray-500 mt-1">Mon-Fri from 9am to 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div
+                                class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 flex-shrink-0">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold text-gray-900">Email</h3>
+                                <p class="text-gray-600 mt-1">admin@inemtechnologies.com</p>
+                                <p class="text-sm text-gray-500 mt-1">Online support 24/7</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div
+                                class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold text-gray-900">Office</h3>
+                                <p class="text-gray-600 mt-1">
+                                    29, M.R. Kandigai, Winterpet,<br>
+                                    Arakkonam, TN 631005
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-2xl font-bold mb-4 text-white">Inem Technologies</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">Innovative software solutions for modern business
+                        growth.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/inem-technologies-pvt-ltd/"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 text-blue-400">Company</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 text-blue-400">Services</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="services.html" class="hover:text-white transition">Web Development</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">AI Solutions</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Cloud Services</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 text-blue-400">Contact Info</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-500"></i>
+                            <span>+91 9047265051</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-500"></i>
+                            <span>admin@inemtechnologies.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-500"></i>
+                            <span>29, M.R. Kandigai, Winterpet,<br>Arakkonam, TN 631005</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Inem Technologies Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+
+        // Contact Form Logic
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const formData = {
+                    full_name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    requirements: document.getElementById('message').value
+                };
+
+                // Fire and forget API call
+                fetch('https://inem-email-service.onrender.com/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                }).catch(err => console.error('Error sending email:', err));
+
+                // Optimistic UI updates
+                contactForm.reset();
+                successMessage.classList.remove('hidden');
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            });
+        }
+    </script>
+</body>
+
+</html>
